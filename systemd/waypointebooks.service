@@ -1,0 +1,11 @@
+[Unit]
+Description=waypoint_ebooks bot
+
+[Service]
+Type=oneshot
+User=pi
+WorkingDirectory=
+ExecStart=python bot.py
+
+[Install]
+WantedBy=basic.target

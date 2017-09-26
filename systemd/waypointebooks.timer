@@ -1,0 +1,9 @@
+[Unit]
+Description=waypoint_ebooks Bot Posting Schedule
+
+[Timer]
+OnCalendar=*:0/10
+Persistent=true
+ 
+[Install]
+WantedBy=timers.target
