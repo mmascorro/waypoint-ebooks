@@ -35,7 +35,7 @@ def scrape_waypoint():
 
             current_page += 1
 
-            time.sleep(5)
+        time.sleep(5)
 
     f.close()
 
