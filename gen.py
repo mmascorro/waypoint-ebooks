@@ -8,7 +8,7 @@ corpusFile = './data/corpus.txt'
 dbFile = './data/tweets.sqlite3'
 
 def generate():
-	generate_count = 50
+	generate_count = 96
 	model_json = open(modelFile, 'r').read()
 	model = markovify.Text.from_json(model_json)
 
@@ -44,7 +44,7 @@ def make_model():
 
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--model", help="Create Model JSON")
+	parser.add_argument("--model", action="store_true", default=False, help="Create Model JSON")
 	args = parser.parse_args()
 	if args.model:
 		make_model()

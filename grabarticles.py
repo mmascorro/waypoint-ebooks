@@ -37,7 +37,7 @@ def scrape_waypoint():
             f.write(article_body)
             f.write("\n\n\n")
 
-            current_page += 1
+        current_page += 1
 
         time.sleep(5)
 
