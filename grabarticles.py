@@ -6,7 +6,7 @@ from pprint import pprint
 
 def scrape_waypoint():
     current_page = 1
-    articles_per_page = 12
+    articles_per_page = 24
     corpusFile = './data/corpus.txt'
 
     article_url_base = 'https://waypoint.vice.com/api/v1/latest?locale=en_us&page={}&per_page={}'
@@ -35,7 +35,7 @@ def scrape_waypoint():
             article_body = soup.get_text()
 
             f.write(article_body)
-            f.write("\n\n\n")
+            f.write("\n\n")
 
         current_page += 1
 
